@@ -43,5 +43,9 @@ public class OverlayPolylineManager extends SimpleViewManager<OverlayPolyline> {
     public void setStroke(OverlayPolyline overlayPolyline, ReadableMap stroke) {
         overlayPolyline.setStroke(StrokeUtil.fromReadableMap(stroke));
     }
+    @ReactProp(name = "texture")
+    public void setTexture(OverlayPolyline overlayPolyline, ReadableMap texture) {
+        overlayPolyline.setTexture(BitmapUtil.createBitmapDescriptor(texture));
+    }
 
 }

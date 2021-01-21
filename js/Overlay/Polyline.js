@@ -17,7 +17,8 @@ export default class Polyline extends Component {
   static propTypes = {
     ...View.propTypes,
     points: PropTypes.array,
-    stroke: PropTypes.object
+    stroke: PropTypes.object,
+    icon:this.propTypes.object,
   };
 
   static defaultProps = {

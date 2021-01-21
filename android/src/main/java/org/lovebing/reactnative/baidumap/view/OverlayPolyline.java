@@ -64,7 +64,11 @@ public class OverlayPolyline extends View implements OverlayView {
             polyline.setWidth(stroke.strokeWidth);
         }
     }
-
+    public void setTexture(BitmapDescriptor mTexture) {
+        if (polyline != null) {
+            polyline.setTexture(mTexture);
+        }
+    }
     @Override
     public void addTopMap(BaiduMap baiduMap) {
         PolylineOptions options = new PolylineOptions().width(stroke.strokeWidth)
